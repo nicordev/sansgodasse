@@ -6,4 +6,4 @@ I built it before I began my online course.
 
 It shows my first steps into PHP and OOP.
 
-You can access it here: http://sansgodasse.nicordev.com
+You can access it here: https://sansgodasse.nicordev.com
