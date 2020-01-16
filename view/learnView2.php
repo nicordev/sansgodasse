@@ -5,7 +5,7 @@ ob_start();
 
 <h2 class="pageTitle">Apprendre à courir pieds nus</h2>
 
-<?php include('includes/learnNav.php') ?>
+<?php include(ROOT . '/includes/learnNav.php') ?>
 
 <section class="content">
 	<h3>Les points clés d’une foulée respectueuse de votre corps</h3>
@@ -304,5 +304,5 @@ ob_start();
 <?php
 $content = ob_get_clean();
 
-require ('template.php');
+require (ROOT . '/view/template.php');
 ?>

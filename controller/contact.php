@@ -45,4 +45,4 @@ if (isset($_POST['contactAuthor'])) {
 	}
 }
 
-require ('view/contactView.php');
+require (ROOT . '/view/contactView.php');

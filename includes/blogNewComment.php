@@ -8,7 +8,7 @@
 	?>
 
 	<!-- Formulaire d'ajout d'un commentaire -->
-	<form id="newBlogComment" method="post" action=<?= '"index.php?page=blog&amp;blogPostId=' . $blogPost->id() . '&amp;scroll="' ?>>
+	<form id="newBlogComment" method="post" action=<?= '"/?page=blog&amp;blogPostId=' . $blogPost->id() . '&amp;scroll="' ?>>
 		<label for="newBlogCommentBody">Commentaire <span class="formMandatory">*</span></label><br />
 		<textarea id="newBlogCommentBody" name="newBlogCommentBody" cols="45" rows="8"></textarea><br /><br />
 

@@ -5,7 +5,7 @@ ob_start();
 
 <h2 class="pageTitle">Apprendre à courir pieds nus</h2>
 
-<?php include('includes/learnNav.php') ?>
+<?php include(ROOT . '/includes/learnNav.php') ?>
 
 <section class="content">
 	<h3>Avant-propos</h3>
@@ -58,12 +58,12 @@ ob_start();
 		</div>
 		
 		<p>
-			Maintenant, en avant vers la première étape : <a href="index.php?page=learn&part=1">le choix du terrain de jeu !</a>
+			Maintenant, en avant vers la première étape : <a href="/?page=learn&part=1">le choix du terrain de jeu !</a>
 		</p>
 
 		<figure class="center">
 			<div class="superimposed">
-				<a href="index.php?page=learn&part=1"><img src="images/learn0_go.jpg" alt="Photo de moi" /></a>
+				<a href="/?page=learn&part=1"><img src="images/learn0_go.jpg" alt="Photo de moi" /></a>
 				<figcaption>C'est parti !</figcaption>
 			</div>
 		</figure>
@@ -71,7 +71,7 @@ ob_start();
 
 	<footer class="contentFooter">
 		<p>
-			La suite : <a href="index.php?page=learn&part=1">Les surfaces idéales pour débuter</a>
+			La suite : <a href="/?page=learn&part=1">Les surfaces idéales pour débuter</a>
 		</p>
 	</footer>
 </section>
@@ -79,5 +79,5 @@ ob_start();
 <?php
 $content = ob_get_clean();
 
-require ('template.php');
+require (ROOT . '/view/template.php');
 ?>

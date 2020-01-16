@@ -18,11 +18,11 @@ if (isset($blogPost)) {
 		if (isset($_SESSION['memberFunction']) AND $_SESSION['memberFunction'] === 'admin') {
 			if (isset($_GET['action']) AND $_GET['action'] === "edit") {
 			?>
-			<p><a href=<?= '"index.php?page=blog&amp;blogPostId=' . $blogPost->id() . '"' ?>>Annuler l'édition</a></p>
+			<p><a href=<?= '"/?page=blog&amp;blogPostId=' . $blogPost->id() . '"' ?>>Annuler l'édition</a></p>
 			<?php
 			} else {
 			?>
-			<p><a href=<?= '"index.php?page=blog&amp;action=edit&amp;blogPostId=' . $blogPost->id() . '"' ?>>Editer le billet</a></p>
+			<p><a href=<?= '"/?page=blog&amp;action=edit&amp;blogPostId=' . $blogPost->id() . '"' ?>>Editer le billet</a></p>
 			<?php
 			}
 		}
@@ -38,7 +38,7 @@ if (isset($blogPost)) {
 
 	// Formulaire de modification du billet
 	if (isset($_GET['action']) AND $_GET['action'] === "edit") {
-		include("includes/blogEditPost.php");
+		include(ROOT . '/includes/blogEditPost.php');
 	}
 	?>
 
@@ -50,7 +50,7 @@ if (isset($blogPost)) {
 	<!-- Commentaires -->
 	<?php
 	// Ajout d'un commentaire
-	include("includes/blogNewComment.php");
+	include(ROOT . '/includes/blogNewComment.php');
 
 	// Nombre de commentaires
 	if (empty($blogPostComments))
@@ -91,7 +91,7 @@ if (!empty($shortBlogPosts)) {
 
 	<article class="blogPostBody">
 		<?= $shortBlogPost->body() ?>
-		<p class="readMore"><a href=<?= '"' . 'index.php?page=blog&amp;blogPostId=' . $shortBlogPost->id() . '"' ?>>Lire la suite...</a></p>
+		<p class="readMore"><a href=<?= '"' . '/?page=blog&amp;blogPostId=' . $shortBlogPost->id() . '"' ?>>Lire la suite...</a></p>
 	</article>
 
 	<!-- L'id du post pour permettre l'édition ultérieure avec JS -->
@@ -112,7 +112,7 @@ if (isset($newBlogPostMsg)) {
 
 // Formulaire d'ajout de billet
 if (isset($_SESSION['memberFunction']) AND $_SESSION['memberFunction'] === 'admin' AND !checkDisconnected()) {
-	include('includes/blogNewPost.php');
+	include(ROOT . '/includes/blogNewPost.php');
 }
 ?>
 
@@ -128,14 +128,14 @@ if (isset($connexionMsg))
 // Connexion / Déconnexion
 echo '<footer id="blogFooter">';
 if (isset($connected) AND $connected OR isset($_SESSION['memberFunction']) AND !checkDisconnected()) {
-	include('includes/disconnexionForm.php');
+	include(ROOT . '/includes/disconnexionForm.php');
 } else {
-	include('includes/connexionForm.php');
+	include(ROOT . '/includes/connexionForm.php');
 }
 echo '</footer>';
 
 $content = ob_get_clean();
 
 
-require ('template.php');
+require (ROOT . '/view/template.php');
 ?>

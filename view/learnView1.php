@@ -5,7 +5,7 @@ ob_start();
 
 <h2 class="pageTitle">Apprendre à courir pieds nus</h2>
 
-<?php include('includes/learnNav.php') ?>
+<?php include(ROOT . '/includes/learnNav.php') ?>
 
 <section class="content">
 	<h3>Les surfaces idéales pour débuter la course pieds nus</h3>
@@ -251,7 +251,7 @@ ob_start();
 
 	<footer>
 		<p>
-			La suite : <a href="index.php?page=learn&part=2">La foulée</a>
+			La suite : <a href="/?page=learn&part=2">La foulée</a>
 		</p>
 	</footer>
 </section>
@@ -259,5 +259,5 @@ ob_start();
 <?php
 $content = ob_get_clean();
 
-require ('template.php');
+require (ROOT . '/view/template.php');
 ?>

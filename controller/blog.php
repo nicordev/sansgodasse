@@ -95,4 +95,4 @@ if (isset($_GET['blogPostId'])) {
 }
 
 // On demande la vue svp !
-require ('view/blogView.php');
+require (ROOT . '/view/blogView.php');

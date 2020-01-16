@@ -1,3 +1,3 @@
 <?php
 
-require ('view/helpView.php');
+require (ROOT . '/view/helpView.php');

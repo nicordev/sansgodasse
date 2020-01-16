@@ -1,4 +1,4 @@
 <?php
 
-require ('view/testsView.php');
+require (ROOT . '/view/testsView.php');
 

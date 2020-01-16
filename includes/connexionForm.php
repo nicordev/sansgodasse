@@ -1,4 +1,4 @@
-<form method="post" action="index.php?page=blog">
+<form method="post" action="/?page=blog">
 	<label for="blogLogin">Login</label><br />
 	<input type="text" name="blogLogin" id="blogLogin" /><br /><br />
 

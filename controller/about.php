@@ -1,2 +1,2 @@
 <?php
-require ('view/aboutView.php');
+require (ROOT . '/view/aboutView.php');

@@ -1,4 +1,4 @@
-<form method="post" action=<?= '"index.php?page=blog&amp;action=save&amp;blogPostId=' . $blogPost->id() . '"' ?>>
+<form method="post" action=<?= '"/?page=blog&amp;action=save&amp;blogPostId=' . $blogPost->id() . '"' ?>>
 
 	<label for="editBlogPostTitle">Titre du billet</label><br/>
 	<input type="text" name="editBlogPostTitle" id="editBlogPostTitle" value=<?= '"' . $blogPost->title() . '"' ?> /><br /><br />

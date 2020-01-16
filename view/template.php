@@ -13,7 +13,7 @@
         
     <body>
         <?php
-        include('includes/header.php');
+        include(ROOT . '/includes/header.php');
         ?>
 		<?= $content ?>
         

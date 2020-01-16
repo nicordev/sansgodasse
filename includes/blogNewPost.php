@@ -1,4 +1,4 @@
-<form id="newBlogPost" method="post" action="index.php?page=blog">
+<form id="newBlogPost" method="post" action="/?page=blog">
 	<label for="newBlogPostTitle">Titre du billet</label><br />
 	<input type="text" name="newBlogPostTitle" id="newBlogPostTitle" /><br /><br />
 

@@ -1,5 +1,5 @@
 <?php
-$title = "Sans godasse";
+$title = "SansGodasse";
 ob_start();
 ?>
 
@@ -16,10 +16,10 @@ ob_start();
 		<h3>Bienvenue !</h3>
 
 		<p>Si vous cherchez des informations sur la course pieds nus ou minimaliste, vous êtes au bon endroit !</p>
-		<p>Vous trouverez une méthode pour vous mettre à la course pieds nus sur la page <a href="index.php?page=learn">"Apprendre à courir pieds nus"</a>.</p>
-		<p>Je vous parle de mon expérience sur la page <a href="index.php?page=about">"A propos"</a>.</p>
-		<p>Vous pourrez partager vos exploits ou poser vos questions dans la rubrique <a href="index.php?page=help">"Entraide"</a>.</p>
-		<p>Enfin vous pouvez suivre quelques actualités sur <a href="index.php?page=blog">le blog</a>.</p>
+		<p>Vous trouverez une méthode pour vous mettre à la course pieds nus sur la page <a href="/?page=learn">"Apprendre à courir pieds nus"</a>.</p>
+		<p>Je vous parle de mon expérience sur la page <a href="/?page=about">"A propos"</a>.</p>
+		<p>Vous pourrez partager vos exploits ou poser vos questions dans la rubrique <a href="/?page=help">"Entraide"</a>.</p>
+		<p>Enfin vous pouvez suivre quelques actualités sur <a href="/?page=blog">le blog</a>.</p>
 		<p>Bonne visite !</p>
 	</section>
 
@@ -36,5 +36,5 @@ ob_start();
 <?php
 $content = ob_get_clean();
 
-require ('template.php');
+require (ROOT . '/view/template.php');
 ?>
