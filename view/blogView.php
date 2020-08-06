@@ -128,9 +128,9 @@ if (isset($connexionMsg))
 // Connexion / Déconnexion
 echo '<footer id="blogFooter">';
 if (isset($connected) AND $connected OR isset($_SESSION['memberFunction']) AND !checkDisconnected()) {
-	include(ROOT . '/includes/disconnexionForm.php');
+//	include(ROOT . '/includes/disconnexionForm.php');
 } else {
-	include(ROOT . '/includes/connexionForm.php');
+//	include(ROOT . '/includes/connexionForm.php');
 }
 echo '</footer>';
 

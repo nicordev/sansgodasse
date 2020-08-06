@@ -104,6 +104,7 @@ input {
 */
 #blogFooter {
 	width: 100%;
+	padding: 3em 0;
 }
 
 #blogFooter form {
