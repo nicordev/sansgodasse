@@ -1,36 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-        <title>{{ page.title }}</title>
-        <link href="css/style.css" rel="stylesheet" />
-        <link href="css/smallMenu.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Shadows+Into+Light" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR|Tangerine" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-        <link rel="icon" href="images/favicon.ico" />
+        {% include head.html %}
     </head>
-        
     <body>
         <header>
-            <nav>
-                <ul id="navigation">
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/?page=about">A propos</a></li>
-                    <li><a href="/?page=learn">Apprendre à courir pieds nus</a></li>
-                    <li><a href="/?page=help">Entraide</a></li>
-                    <li><a href="/?page=blog">Blog</a></li>
-                    <li><a href="/?page=contact">Me contacter</a></li>
-                </ul>
-            </nav>
+            {% include navigation.html %}
         </header>
-        
-        <!-- Bouton pour revenir en haut de la page -->
-        <div id="upBtn">
-            <a href="#">
-                <img src="images/up.png" width="30" height="60" />
-            </a>
-        </div>
-        <script src="js/goUp.js"></script>
+
+        {{ content }}
+
+        {% include go-up.html %}
     </body>
 </html>
