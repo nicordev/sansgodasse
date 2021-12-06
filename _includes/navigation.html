@@ -1,11 +1,8 @@
-
 <nav>
     <ul id="navigation">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/?page=about">A propos</a></li>
-        <li><a href="/?page=learn">Apprendre à courir pieds nus</a></li>
-        <li><a href="/?page=help">Entraide</a></li>
-        <li><a href="/?page=blog">Blog</a></li>
-        <li><a href="/?page=contact">Me contacter</a></li>
+        <li><a href="{{ "/" | absolute_url }}">Accueil</a></li>
+        <li><a href="{{ "/about.html" | absolute_url }}">A propos</a></li>
+        <li><a href="{{ "/learn/learn.html" | absolute_url }}">Apprendre à courir pieds nus</a></li>
+        <li><a href="{{ "/blog.html" | absolute_url }}">Blog</a></li>
     </ul>
 </nav>

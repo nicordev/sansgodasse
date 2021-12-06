@@ -1,0 +1,36 @@
+.postListTitle {
+    padding-top: 1em;
+    color: rgb(192, 98, 44);
+}
+
+.postList {
+    max-width: 1000px;
+}
+
+.postListItem {
+    margin: 0 1em;
+}
+
+.postListItemTitle {
+    margin-bottom: 0.5em;
+}
+
+.postListItemMeta {
+    font-style: italic;
+    font-size: 0.75em;
+    color: grey;
+}
+
+.postListItemMetaPart {
+    padding: 0 1em;
+}
+
+.blogPostTitle {
+    padding-top: 1em;
+    color: rgb(192, 98, 44);
+}
+
+.blogPostBody {
+    max-width: 1000px;
+    margin: 0 1em;
+}

@@ -1,0 +1,11 @@
+{% assign links = site.data.learn_navigation %}
+<nav id="learnNav">
+    <ul>
+        {% for link in links %}
+            {% assign linkHref = link.path | absolute_url %}
+            <li>
+                <a href="{{ linkHref }}" class="pageLink {% if page.url == link.path %}currentPageLink{% endif %}">{{ link.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
