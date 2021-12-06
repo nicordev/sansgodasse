@@ -362,6 +362,11 @@ input {
     margin-top: 1.5em;
 }
 
+.aboutTitle {
+    padding-top: 1em;
+    color: rgb(192, 98, 44);
+}
+
 .shortPostBody {
     font-size: 1em;
     color: grey;
