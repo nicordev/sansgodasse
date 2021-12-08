@@ -12,13 +12,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
 }
 
 h1 {
     text-align: center;
     margin-top: 1em;
-    font-family: 'Noto Serif KR', sans-serif;
+    font-family: serif;
     font-size: 3em;
     color: white;
 }
@@ -293,10 +293,8 @@ input {
     text-align: center;
     font-style: italic;
     font-size: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.25em 2em;
     box-shadow: 0px 3px 6px rgb(220, 220, 220);
-    padding: 5px;
 }
 
 .leftFloat {
@@ -407,7 +405,7 @@ input {
     Polices
     -------
 
-    font-family: 'Noto Serif KR', sans-serif;
+    font-family: sans-serif;
 
     font-family: 'Tangerine', cursive;
 

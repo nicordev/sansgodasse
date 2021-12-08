@@ -5,6 +5,7 @@
 
 .postList {
     max-width: 1000px;
+    margin-top: -1em;
 }
 
 .postListItem {
@@ -12,6 +13,8 @@
 }
 
 .postListItemTitle {
+    font-size: 1.5em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
@@ -23,6 +26,10 @@
 
 .postListItemMetaPart {
     padding: 0 1em;
+}
+
+.postListItemExcerpt {
+    font-size: 1em;
 }
 
 .blogPostTitle {

@@ -7,12 +7,14 @@ title: Articles
   <h1 class="postListTitle">{{ page.title }}</h1>
 </header>
 
-<section class="postList">
+<DIV class="postList">
   {% for post in site.posts %}
     <article class="postListItem">
       <h3 class="postListItemTitle"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
       <div class="postListItemMeta"><span class="postListItemMetaPart">{{ post.date | date_to_string }}</span><span class="postListItemMetaPart">{{ post.author }}</span></div>
-      {{ post.excerpt }}
+      <p class="postListItemExcerpt">
+        {{ post.excerpt | strip_html }}
+      </p>
     </article>
   {% endfor %}
-  </section>
+</DIV>
