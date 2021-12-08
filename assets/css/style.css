@@ -76,15 +76,6 @@ img {
     max-width: 100%;
 }
 
-footer {
-    background-color: rgb(37, 37, 37);
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding: 3em;
-    margin-top: 3em;
-}
-
 textarea {
     min-width: 30em;
     max-width: 80em;
@@ -264,6 +255,12 @@ input {
 }
 
 .contentFooter {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 3em 0;
+    margin-top: 3em;
     width: 100%;
 }
 
