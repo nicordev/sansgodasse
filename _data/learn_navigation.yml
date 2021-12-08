@@ -1,0 +1,6 @@
+- name: Avant-propos
+  path: /learn/learn.html
+- name: Choix du terrain
+  path: /learn/part1.html
+- name: Foulée
+  path: /learn/part2.html

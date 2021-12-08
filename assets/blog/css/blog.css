@@ -1,0 +1,43 @@
+.postListTitle {
+    padding-top: 1em;
+    color: rgb(192, 98, 44);
+}
+
+.postList {
+    max-width: 1000px;
+    margin-top: -1em;
+}
+
+.postListItem {
+    margin: 0 1em;
+}
+
+.postListItemTitle {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.postListItemMeta {
+    font-style: italic;
+    font-size: 0.75em;
+    color: grey;
+}
+
+.postListItemMetaPart {
+    padding: 0 1em;
+}
+
+.postListItemExcerpt {
+    font-size: 1em;
+}
+
+.blogPostTitle {
+    padding-top: 1em;
+    color: rgb(192, 98, 44);
+}
+
+.blogPostBody {
+    max-width: 1000px;
+    margin: 0 1em;
+}
